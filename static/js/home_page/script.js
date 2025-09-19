@@ -1,4 +1,4 @@
-let nav = document.creeateElement("nav");
+let nav = document.createElement("nav");
     nav.id = "nav_bar";
     nav.style.cssText = `
         background-color: gray;
