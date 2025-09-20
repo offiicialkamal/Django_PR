@@ -20,4 +20,10 @@ from datetime import datetime
 
 def home_page(request):
     print("r̥endeering the home page content")
-    return render(request, "home_page/index.html")
+    home_page_dict = {
+        "title": "home page",
+        "hader":" ALL IN ONE NEWS PLATEFORM ",
+        "description": "hear youll find all movies and polotics related latest news ",
+        "img":"images/home.png"
+    }
+    return render(request, "home_page/index.html", context = home_page_dict)

@@ -1,9 +1,11 @@
 modules = ["python-3.11", "nodejs-20", "web"]
 [agent]
 expertMode = true
+integrations = ["python_database:1.0.0"]
 
 [nix]
 channel = "stable-25_05"
+packages = ["libmysqlclient", "mysql80", "pkg-config"]
 
 [workflows]
 runButton = "Project"
@@ -34,7 +36,7 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 40221
+localPort = 35963
 externalPort = 3000
 
 [deployment]

@@ -1,13 +1,12 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-    <title>Home Page</title>
+    <title>{{title}}</title>
     <link rel="stylesheet" href="{% static 'css/home_page/style.css' %}">
-    <script src="{% static 'js/home_page/script.js' %}"></script>
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
-    <p>This content is from the Django template.</p>
-</body>
-</html>
+    <h1> {{hader}} </h1>
+    <p>{{description}}</p>
+    <image src="{% static 'images/news.jpg'%}"></image>
+</html>  
